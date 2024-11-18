@@ -80,7 +80,7 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s, transform 0.2s; 
 }
-.login-container {
+.login-container,.Register-container{
     width: 400px; 
     padding: 60px;
     background-color: plum;
@@ -90,7 +90,7 @@ nav a:hover {
 }
 
 
-.login-container h2 {
+.login-container h2,.Register-container h2 {
     margin-bottom: 20px;
     font-size: 24px;
     color: #333333;
@@ -112,8 +112,11 @@ form label {
 }
 
 
-form input {
-    padding: 15px;
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"] {
+    padding: 10px;
     font-size: 14px;
     border: 1px solid #dddddd;
     border-radius: 5px;
@@ -136,11 +139,7 @@ form button {
 form button:hover {
     background-color: purple;
 }
-.register-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
+
 
 .profile-icon {
     display: flex;
@@ -152,4 +151,13 @@ form button:hover {
     width: 70px;
     height: 70px;
 
+}
+.register-link {
+    margin-top: 20px;
+}
+
+.register-link a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
 }
