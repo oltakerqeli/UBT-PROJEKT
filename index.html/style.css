@@ -5,10 +5,8 @@
     padding: 0;
     font-family: Arial, sans-serif;
 }
-
 body {
-    background-image: url('C:/Users/kerqe/OneDrive/Desktop/R.jpeg');
-    background-color: #fbe9cc;
+    background-color: #f4efe8;
     background-size: cover;
     background-position: center;
     color: #333;
@@ -19,6 +17,18 @@ body {
     text-align: center;
 }
 
+.photo-container {
+    margin-top: -100px;
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.photo-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 header {
     color:white;
     text-align: center;
@@ -34,9 +44,9 @@ header {
 }
 
 nav a {
+    color: lightskyblue;
     margin: 15px 0;
     padding: 5px;
-    color: #fff;
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
@@ -44,34 +54,37 @@ nav a {
 }
 
 nav a:hover {
-    color: #8000ff; 
+    color:darkblue; 
 }
 
 .content {
+    color: lightskyblue;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 300px;
 }
 
 
 .countdown {
-    margin-top: 20px;
+    margin-top:10px;
     font-size: 2rem;
-    background-color: #8000ff;
+    background-color:lightskyblue;
     color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     display: inline-block;
+    max-width: 1100px;
     min-width: 300px;
 }
 .btn-buy-tickets {
     display: inline-block; 
     margin-top: 15x; 
     padding: 10px 20px; 
-    background-color:plum; 
+    background-color:lightblue; 
     color: white;
     font-size: 2rem;
     font-weight: bold;
@@ -83,9 +96,9 @@ nav a:hover {
 .login-container,.Register-container{
     width: 400px; 
     padding: 60px;
-    background-color: plum;
+    background-color:lightblue;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px lightblue;
     text-align: center; 
 }
 
@@ -130,14 +143,14 @@ form button {
     font-size: 16px;
     font-weight: bold;
     color: #ffffff;
-    background-color: purple;
+    background-color:lightskyblue;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: purple;
+    background-color:blue;
 }
 
 
@@ -160,4 +173,29 @@ form button:hover {
     color: blue;
     text-decoration: none;
     font-weight: bold;
+}
+.concert-list {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#concerts {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+#concerts p{
+  background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 5px 0;
 }
