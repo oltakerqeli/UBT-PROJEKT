@@ -11,14 +11,19 @@ body {
     background-position: center;
     color: #333;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     text-align: center;
+}
+.Loginclass{
+    display: flex;
+     justify-content: center;
+    align-items: center; 
+    
 }
 
 .photo-container {
-    margin-top: -100px;
+    margin-top: -200px;
     position: relative;
     width: 100%;
     max-width: 1100px;
@@ -94,6 +99,7 @@ nav a:hover {
     transition: background-color 0.3s, transform 0.2s; 
 }
 .login-container,.Register-container{
+
     width: 400px; 
     padding: 60px;
     background-color:lightblue;
@@ -103,7 +109,10 @@ nav a:hover {
 }
 
 
-.login-container h2,.Register-container h2 {
+.login-container h2,.Register-container h2 { 
+    display: flex;
+    justify-content: center;
+   align-items: center; 
     margin-bottom: 20px;
     font-size: 24px;
     color: #333333;
@@ -111,6 +120,7 @@ nav a:hover {
 
 
 form {
+    
     display: flex;
     flex-direction: column;
     gap: 15px; 
@@ -118,6 +128,9 @@ form {
 
 
 form label {
+    display: flex;
+    justify-content: center;
+   align-items: center; 
     text-align: left;
     font-weight: bold;
     font-size: 10px;
