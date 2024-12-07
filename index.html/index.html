@@ -5,16 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Concert Website</title>
     <link rel="stylesheet" href="style.css">
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  rel="stylesheet"
+/>
 </head>
 <body>
+    <style>
+             .popup {
+            display: none; 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+        }
+
+        .popup-content {
+            background:#cfcabf;
+            margin: 10% auto;
+            padding: 20px;
+            border-radius: 5px;
+            width: 50%;
+            text-align: center;
+            position: relative;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        /* Form styles */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            padding: 8px;
+            width: 80%;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
  
 <header>   
 
     <div class="header-content">
+    
         <nav>
-            <a href="#">About</a>
+            <a href="about.html">About</a>
             <a href="#">Photos</a>
-            <a href="#">Contact</a>
+            <a href="#">Music</a>
             <a href="Login.html">Log in</a>
         </nav>
     </div>
@@ -39,11 +105,126 @@
       </div> 
 </header>
 <main>
-    <h1 style="color: lightskyblue; font-weight: bold;">Upcoming concerts</h1>
-    <div id="concerts"></div>
-    <script src="concerts.js"></script>
+    <h1 style="color:#8e7962; font-weight: bold;">UPCOMING CONCERTS</h1>
+    <div class="concert-list">        
+        <div class="concert-item">
+            <div class="details">
+                <h2 class="date">JAN 21, 2025</h2>
+                <h1 class="location">WASHINGTON, DC</h1>
+                <p class="venue">The Anthem</p>
+            </div>
+            <div class="buttons">
+                <a href="#buy-tickets" class="btn-buy-tickets">Buy Tickets</a>
+            </div>
+        </div>
+        <div class="concert-item">
+            <div class="details">
+                <h2 class="date">JAN 24, 2025</h2>
+                <h1 class="location">NEW YORK, NY</h1>
+                <p class="venue">Hammerstein Ballroom</p>
+            </div>
+            <div class="buttons">
+                <a href="#buy-tickets" class="btn-buy-tickets">Buy Tickets</a>
+            </div>
+        </div>
+        <div class="concert-item">
+            <div class="details">
+                <h2 class="date">JAN 25, 2025</h2>
+                <h1 class="location">NEW YORK, NY</h1>
+                <p class="venue">Hammerstein Ballroom</p>
+            </div>
+            <div class="buttons">
+                <a href="#buy-tickets" class="btn-buy-tickets">Buy Tickets</a>
+            </div>
+        </div>
+        <div class="concert-item">
+            <div class="details">
+                <h2 class="date">JAN 28, 2025</h2>
+                <h1 class="location">LOS ANGELES, CA</h1>
+                <p class="venue">Shrine Expo Hall</p>
+            </div>
+            <div class="buttons">
+                <a href="#buy-tickets" class="btn-buy-tickets">Buy Tickets</a>
+            </div>
+        </div>
+        <div class="concert-item">
+            <div class="details">
+                <h2 class="date">JAN 29, 2025</h2>
+                <h1 class="location">LOS ANGELES, CA</h1>
+                <p class="venue">Shrine Expo Hall</p>
+            </div>
+            <div class="buttons">
+              <a href="#buy-tickets" class="btn-buy-tickets">Buy Tickets</a>
+            </div>
+        </div>
+        <div class="concert-item">
+            <div class="details">
+                <h2 class="date">FEB 1, 2025</h2>
+                <h1 class="location">LAS VEGAS, NV</h1>
+                <p class="venue">The Chelsea At The Cosmopolitan</p>
+            </div>
+            <div class="buttons">
+                <a href="#buy-tickets" class="btn-buy-tickets">Buy Tickets</a>
+            </div>
+        </div>
+    </div>
 </main>
+<div id="ticket-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h2>Buy Tickets</h2>
+        <form id="ticket-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="quantity">Number of Tickets:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+            <label for="Card Numbers">Card Numbers:</label>
+            <input type="Card Numbers" id="Card Numbers" name="Card Numbers" maxlength="19" required>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</div>
+<script>
+
+const popup = document.getElementById('ticket-popup');
+const buyButtons = document.querySelectorAll('.btn-buy-tickets'); 
+const closeButton = document.querySelector('.close-btn');
+
+
+buyButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        popup.style.display = 'block'; 
+    });
+});
+
+closeButton.addEventListener('click', () => {
+    popup.style.display = 'none'; 
+});
+
+
+window.addEventListener('click', (e) => {
+    if (e.target === popup) {
+        popup.style.display = 'none';
+    }
+});
+</script>
 
 </body>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/zayn"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/zayn/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UC3PdiRW5dUA4V70ueeR1eHA"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p> @ 2024 ZAYN OFFICIAL. ALL RIGHTS RESERVED,REPBULIC RECORDS</p>
+        <p>
+IF YOU ARE USING A SCREEN READER AND HAVING PROBLEMS USING THIS WEBSITE,PLEASE CALL 866-682-4413 FOR ASSISTANCE
+        </p>
+      </div>
+      
+</footer>
 
 </html>
