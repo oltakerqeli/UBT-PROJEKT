@@ -23,19 +23,20 @@
     </div>
     <div class="Register-container">
         <form class="register-form">
-            <p><input type="text"placeholder="Name" required></p>
-            <p><input type="text"placeholder="Surname" required></p>
-            <p><input type="email"placeholder="Email " required></p>
-            <p><input type="password"placeholder="Password" required></p>
-            <p>Male <input type="radio" name="Gender">Female: <input type="radio" name="Gender"></p>
+            <p><input type="text"placeholder="Name" id="name" required></p>
+            <p><input type="text"placeholder="Surname" id="surname" required></p>
+            <p><input type="email"placeholder="Email " id="email" required></p>
+            <p><input type="password"placeholder="Password" id="password" required></p>
+            <p>Male <input type="radio" name="Gender" id="male">Female: <input type="radio" name="Gender" id="female"></p>
             
-            <input type="date">
-            <label><input type="checkbox">  I accept the conditions.</label>
-          <label><input type="checkbox">    I want to accept emails regarding the company.</label>
+            <input type="date" id="dob">
+            <label><input type="checkbox" id="conditions"> I accept the conditions.</label>
+          <label><input type="checkbox" id="emails">    I want to accept emails regarding the company.</label>
         
-            <button>Regjister</button>
+            <button>Submit</button>
         </form>
     </div>
+    <script src="scriptt.js"></script>
     </main>
 
     <footer class="footer">
