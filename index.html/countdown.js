@@ -23,7 +23,7 @@ function updateConcertInfo() {
         if (timeLeft <= 0) {
             clearInterval(countdownFunction);
             currentConcert++;
-            updateConcertInfo(); // Move to the next concert
+            updateConcertInfo(); 
             return;
         }
 
