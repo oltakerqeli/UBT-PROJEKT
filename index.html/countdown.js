@@ -1,7 +1,7 @@
 const concertDates = [
-    { city: "Edinburgh", date: "Dec 9, 2024 19:00:00" },
-    { city: "Washington DC", date: "Jan 21, 2025 20:00:00" },
-    { city: "New Yourk", date: "Jan 24, 2025 18:00:00" }
+    { city: "Edinburgh", date: "Jan 9, 2024 19:00:00" },
+    { city: "Washington DC", date: "Feb 21, 2025 20:00:00" },
+    { city: "New Yourk", date: "Feb 24, 2025 18:00:00" }
     
 ];
 
