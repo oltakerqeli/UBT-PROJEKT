@@ -14,7 +14,7 @@
         font-family: Arial, sans-serif;
         text-align: center;
         padding: 2rem;
-        background-color: #f4f4f4;
+        background-color:bage;
     }
     .quiz-container {
         background: #fff;
@@ -189,7 +189,7 @@
     document.querySelector(".quiz-container").innerHTML = `
         <h1>Quiz Completed!</h1>
         <p>You scored ${score}/${quizData.length}.</p>
-        <a href="Gallery.html" style="margin-top: 1rem; background: #8e7962; color: white; padding: 1rem 2rem; border: none; border-radius: 5px; text-decoration: none; display: inline-block;">
+        <a href="Gallery.php" style="margin-top: 1rem; background: #8e7962; color: white; padding: 1rem 2rem; border: none; border-radius: 5px; text-decoration: none; display: inline-block;">
             Back to Gallery
         </a>
     `;

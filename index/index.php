@@ -88,7 +88,7 @@
     </div>
     <div class="content">
         <div class="photo-container">
-            <img src="C:\Users\kerqe\OneDrive\Documents\GitHub\UBT-PROJEKT\index.html\img\SC.png" alt="Photo of ZAYN">
+            <img src="img\ballina.png" alt="Photo of ZAYN">
             <div class="overlay-text">
                 <h1>ZAYN</h1>
                 <h2>STAIRWAY TO THE SKY</h2>

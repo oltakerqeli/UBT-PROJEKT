@@ -25,7 +25,7 @@
     <div class="login-container ">
         <form class="login-form">
             <div class="profile-icon">
-                <img src="C:\Users\kerqe\Downloads\Ushtrimi 3\person.png" alt="profile-icon">
+                <img src="img\Person.png" alt="profile-icon">
             </div>
             <p><input type="text"placeholder="Name Surname"></p>
             <p><input type="email"placeholder="Email"></p>
@@ -34,7 +34,7 @@
         </form>
         <div class="register-link">
             <p>Don't have an account?</p>
-            <a href="Register.html">Register here</a> 
+            <a href="Register.php">Register here</a> 
         </div>
 
     </div>

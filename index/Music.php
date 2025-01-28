@@ -58,26 +58,26 @@
     <div class="container">
         <div class="song">
             <a href= "https://open.spotify.com/track/6woSozcrwhljUaxWBNWDN5?si=a4a1abd9f563421a">
-                <img src="C:\Users\kerqe\OneDrive\Documents\GitHub\UBT-PROJEKT\index.html\img\Screenshot 2024-12-07 135445.png" alt="1st Song">
+                <img src="img\FirstSong.png" alt="1st Song">
             </a>
             <p>4rth Album <em>Room Under The Stairs</em></p>
 
         </div>
         <div class="song">
             <a href="https://open.spotify.com/track/1pemFAKwUCQJlM0H1Pr2H4?si=0b792d21db034c6d">
-                <img src="C:\Users\kerqe\OneDrive\Documents\GitHub\UBT-PROJEKT\index.html\img\Screenshot 2024-12-07 140244.png" alt="2nd Song">
+                <img src="img\SecondSong.png" alt="2nd Song">
                 <p>ALIENATED</p>
             </a>
         </div>
         <div class="song">
             <a href="https://open.spotify.com/track/3aH35oNFzGsCazXBkCsX9g?si=f29bc5142a4e495f">
-                <img src="C:\Users\kerqe\OneDrive\Documents\GitHub\UBT-PROJEKT\index.html\img\Screenshot 2024-12-07 140857.png" alt="3rd Song">
+                <img src="img\ThirdSong.png" alt="3rd Song">
                 <p>WHAT I AM</p>
             </a>
         </div>
         <div class="song">
             <a href="https://open.spotify.com/track/3P9pRL7V9yM9DhY6NGZjzA?si=5b7045e3aa6b4125">
-                <img src="C:\Users\kerqe\OneDrive\Documents\GitHub\UBT-PROJEKT\index.html\img\Screenshot 2024-12-07 141244.png" alt="4rth Song">
+                <img src="img\FourthSong.png" alt="4rth Song">
                 <p>LOVE LIKE THIS</p>
             </a>
         </div>

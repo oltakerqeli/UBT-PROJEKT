@@ -62,18 +62,18 @@
 <section class="gallery">
     <h2 style="color:#8e7962;">OUR FAVORITE MOMENTS</h2>
     <div class="image-grid">
-        <div class="image-item"><img src="C:\Users\kerqe\OneDrive\Documents\GitHub\UBT-PROJEKT\index.html\img\photofinal.jpg" alt="ZAYN"></div>
-        <div class="image-item"><img src="C:\Users\kerqe\OneDrive\Documents\GitHub\UBT-PROJEKT\index.html\img\Screenshot 2024-12-08 033728.png" alt="Image 2"></div>
-        <div class="image-item"><img src="C:\Users\kerqe\OneDrive\Documents\GitHub\UBT-PROJEKT\index.html\img\Screenshot 2024-12-08 033748.png" alt="Image 3"></div>
-        <div class="image-item"><img src="C:\Users\kerqe\OneDrive\Documents\GitHub\UBT-PROJEKT\index.html\img\Screenshot 2024-12-08 033805.png" alt="Image 4"></div>
-        <div class="image-item"><img src="C:\Users\kerqe\OneDrive\Documents\GitHub\UBT-PROJEKT\index.html\img\Screenshot 2024-12-08 035239.png" alt="Image 5"></div>
-        <div class="image-item"><img src="C:\Users\kerqe\OneDrive\Documents\GitHub\UBT-PROJEKT\index.html\img\Screenshot 2024-12-08 035258.png" alt="Image 6"></div>
-        <div class="image-item"><img src="C:\Users\kerqe\OneDrive\Documents\GitHub\UBT-PROJEKT\index.html\img\Screenshot 2024-12-08 033410.png" alt="Image 7"></div>
-        <div class="image-item"><img src="C:\Users\kerqe\OneDrive\Documents\GitHub\UBT-PROJEKT\index.html\img\Screenshot 2024-12-08 035307.png" alt="Image 8"></div>
-        <div class="image-item"><img src="C:\Users\kerqe\OneDrive\Documents\GitHub\UBT-PROJEKT\index.html\img\Screenshot 2024-12-08 035332.png" alt="Image 9"></div>
-        <div class="image-item"><img src="C:\Users\kerqe\OneDrive\Documents\GitHub\UBT-PROJEKT\index.html\img\Screenshot 2024-12-08 035340.png" alt="Image 10"></div>
+        <div class="image-item"><img src="img\firstPhoto.jpg" alt="ZAYN"></div>
+        <div class="image-item"><img src="img\SecondPhoto.png" alt="Image 2"></div>
+        <div class="image-item"><img src="img\ThirdPhoto.png" alt="Image 3"></div>
+        <div class="image-item"><img src="img\FourthPhoto.png" alt="Image 4"></div>
+        <div class="image-item"><img src="img\FifthPhoto.png" alt="Image 5"></div>
+        <div class="image-item"><img src="img\SixthPhoto.png" alt="Image 6"></div>
+        <div class="image-item"><img src="img\SeventhPhoto.png" alt="Image 7"></div>
+        <div class="image-item"><img src="img\EighthPhoto.png" alt="Image 8"></div>
+        <div class="image-item"><img src="img\NinthPhoto.png" alt="Image 9"></div>
+        <div class="image-item"><img src="img\TenthPhoto.png" alt="Image 10"></div>
     </div>
-    <a href="quiz.html" style="display: inline-block; margin-top: 2rem; background: #8e7962; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 5px;">
+    <a href="quiz.php" style="display: inline-block; margin-top: 2rem; background: #8e7962; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 5px;">
         Take the Quiz!
     </a>
 </section>

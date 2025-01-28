@@ -30,7 +30,7 @@
             five talented individuals together,forming one the most successful boy bands of all time.
             </p>
 
-        <img src="C:\Users\kerqe\OneDrive\Documents\GitHub\UBT-PROJEKT\index.html\img\One-Direction-X-Factor-072322-8db967cf22244a34b1d53cb0deb11749.jpg" alt="One Direction">
+        <img src="img\OneDirection.jpg" alt="One Direction">
         
         <h2>The One Direction Era</h2>
         <p>
@@ -83,7 +83,7 @@
             His debut album <em>Mind of Mine</em> topped the charts with hits like <em>Pillowtalk</em>
             Since then he continued to create soulful and meaningful music, shaping his identity as a solo artist.
         </p>
-        <img src="C:\Users\kerqe\OneDrive\Documents\GitHub\UBT-PROJEKT\index.html\img\download.jpg" alt="ZAYN's photo">
+        <img src="img\ZaynABOUTUS.jpg" alt="ZAYN's photo">
         <h2>Stairway to the Sky Tour 2024</h2>
         <p>Zayn is currently embarking on his first-ever solo tour, the <strong>Stairway to the Sky Tour</strong>, celebrating his latest album, <em>Room Under the Stairs</em>. The tour spans iconic venues across the UK and the US, including the O2 Academy in Leeds, Hammerstein Ballroom in New York, and the Shrine Auditorium in Los Angeles. This tour is a celebration of Zayn’s evolution as an artist, showcasing fan-favorite hits, acoustic renditions, and new music from his latest release.</p>
         <p>Known for creating a deeply personal connection with his audience, Zayn promises surprises, unique stage setups, and even guest appearances throughout the tour. Fans are raving about the exclusive "Stairway to the Sky" merchandise, which includes hoodies and posters.</p>
