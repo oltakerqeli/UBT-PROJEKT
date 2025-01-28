@@ -78,11 +78,12 @@
     <div class="header-content">
     
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="Gallery.html">Gallery</a>
-            <a href="Music.html">Music</a>
-            <a href="Login.html">Log in</a>
+            <a href="index.php">Home</a>
+            <a href="about.php">About</a>
+            <a href="Gallery.php">Gallery</a>
+            <a href="Music.php">Music</a>
+            <a href="Login.php">Log in</a>
+            
         </nav>
     </div>
     <div class="content">
@@ -187,9 +188,76 @@
         </form>
     </div>
 </div>
+<!--
+<div id="login-popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form class="login-form">
+            <label for="email">Email:</label>
+            <input type="email" id="login-email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="login-password" name="password" required>
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+    </div>
+</div>
+
+
 <script>
 
-const popup = document.getElementById('ticket-popup');
+
+const ticketPopup = document.getElementById('ticket-popup');
+const loginPopup = document.getElementById('login-popup'); 
+const buyButtons = document.querySelectorAll('.btn-buy-tickets');
+const closeButtons = document.querySelectorAll('.close-btn');
+
+
+function isLoggedIn() {
+    return localStorage.getItem('userLoggedIn') === 'true';
+}
+
+
+buyButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        if (isLoggedIn()) {
+            ticketPopup.style.display = 'block';
+        } else {
+            loginPopup.style.display = 'block';
+        }
+    });
+});
+
+
+closeButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        ticketPopup.style.display = 'none';
+        loginPopup.style.display = 'none';
+    });
+});
+
+
+document.querySelector('.login-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    localStorage.setItem('userLoggedIn', 'true');
+    loginPopup.style.display = 'none';
+    ticketPopup.style.display = 'block'; 
+});
+
+
+window.addEventListener('click', (e) => {
+    if (e.target === ticketPopup) {
+        ticketPopup.style.display = 'none';
+    }
+    if (e.target === loginPopup) {
+        loginPopup.style.display = 'none';
+    }
+});
+
+</script>
+-->
+<script>
+    const popup = document.getElementById('ticket-popup');
 const buyButtons = document.querySelectorAll('.btn-buy-tickets'); 
 const closeButton = document.querySelector('.close-btn');
 

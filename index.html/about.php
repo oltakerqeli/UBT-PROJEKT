@@ -13,12 +13,13 @@
 <body>
     <main>
     <div class="header-content">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="Gallery.html">Gallery</a>
-            <a href="Music.html">Music</a>
-            <a href="Login.html">Log in</a>
+    <nav>
+            <a href="index.php">Home</a>
+            <a href="about.php">About</a>
+            <a href="Gallery.php">Gallery</a>
+            <a href="Music.php">Music</a>
+            <a href="Login.php">Log in</a>
+            
         </nav>
     </div>
     <div class="about-section">

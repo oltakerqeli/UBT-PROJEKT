@@ -43,13 +43,14 @@
 
     <main>
         <div class="header-content">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="Gallery.html">Gallery</a>
-                <a href="Music.html">Music</a>
-                <a href="Login.html">Log in</a>
-            </nav>
+        <nav>
+            <a href="index.php">Home</a>
+            <a href="about.php">About</a>
+            <a href="Gallery.php">Gallery</a>
+            <a href="Music.php">Music</a>
+            <a href="Login.php">Log in</a>
+            
+        </nav>
         </div>
         <h1 style="color:#8e7962;">UNDER THE STAIRS 4th ALBUM</h1>
         <h2 style="color:#8e7962;">Most listened-to songs of the Album</h2>
