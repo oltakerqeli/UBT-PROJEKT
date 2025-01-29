@@ -109,7 +109,7 @@ nav a:hover {
     font-size: 24px;
     color: #333333;
 }
-.Loginclass{
+.Loginclass .Registerclass{
 display: flex;
 flex-direction: column;
     justify-content: center;
@@ -177,15 +177,7 @@ form button {
     height: 70px;
 
 }
-.register-link {
-    margin-top: 20px;
-}
 
-.register-link a {
-    color: blue;
-    text-decoration: none;
-    font-weight: bold;
-}
 
 
 main {

@@ -1,3 +1,25 @@
+<?php
+session_start();
+include_once 'Database.php';
+include_once 'User.php';
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $db = new Database();
+    $connection = $db->getConnection();
+    $user = new User($connection);
+
+   
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    if ($user->login($email, $password)) {
+        header("Location: index.php"); 
+        exit;
+    } else {
+        echo "Invalid login credentials!";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,26 +41,26 @@
             <a href="Gallery.php">Gallery</a>
             <a href="Music.php">Music</a>
             <a href="Login.php">Log in</a>
+            <a href="Register.php">Register</a>
             
         </nav>
         </div>
     <div class="login-container ">
-        <form class="login-form">
+        <form class="login-form" method="POST">
             <div class="profile-icon">
                 <img src="img\Person.png" alt="profile-icon">
             </div>
-            <p><input type="text"placeholder="Name Surname"></p>
-            <p><input type="email"placeholder="Email"></p>
-             <p><input type="password"placeholder="Password"></p>
+            <input type="email" name="email" placeholder="username" required></p>
+             <p><input type="password" name="password" placeholder="Password" required></p>
              <button type="submit">Login</button>
         </form>
-        <div class="register-link">
+<!--<div class="register-link">
             <p>Don't have an account?</p>
             <a href="Register.php">Register here</a> 
-        </div>
+        </div>-->
 
     </div>
-    <script src="script.js"></script>
+   <!-- <script src="script.js"></script>-->
 </main>
 <footer class="footer">
     <div class="footer-content">

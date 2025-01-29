@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,6 +84,7 @@
             <a href="Gallery.php">Gallery</a>
             <a href="Music.php">Music</a>
             <a href="Login.php">Log in</a>
+            <a href="Register.php">Register</a>
             
         </nav>
     </div>

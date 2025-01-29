@@ -2,8 +2,8 @@
 class Database {
     private $host = 'localhost';
     private $dbname = 'ubt-projekti';
-    private $username = 'root'; 
-    private $password = ''; 
+    private $username = 'root'; // Change this as per your configuration
+    private $password = ''; // Change this as per your configuration
     private $conn;
 
     public function __construct() {
